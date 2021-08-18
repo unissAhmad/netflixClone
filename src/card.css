@@ -1,0 +1,109 @@
+*{ font-family: 'Merriweather', seri }
+ a{
+    text-decoration: none;
+    color: #000000;
+}
+.cardBody{
+    background-color: #cbcbcb;
+}
+.cardBody{
+    display: flex;
+    justify-content: center ;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #ffffff;  
+    margin: 10px;
+    border-radius: 10px;
+}
+.card img{
+    height: 160px;
+    width: 210px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.sDesc{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin:10px 5px 5px 5px;
+    color: #87a09d;
+}
+.sName{
+    margin: 5px;
+}
+.card button{
+    margin: 5px;
+    margin-bottom: 10px;
+    padding:0;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+
+}
+.card:hover{
+    box-shadow: 3px 3px #cbcbcb, -0.1em 0 .4em #ffffff; 
+    /* box-shadow: 4px 3px 5px #ffffff; */
+}
+.card a{
+    padding: 5px 10px;
+    display: inline-block;
+}
+.top5{
+    text-align: center;
+    /* font-family: 'Lobster', cursive; */
+    margin: 10px;
+}
+@media (min-width: 1200px) and (max-width: 1500px) { 
+    .card{
+        margin: 10px 120px;
+
+    }
+    .cardBody{
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+ }
+ @media (min-width: 422px) and (max-width: 1199px) {
+    .top5{
+        font-size: 1.2em;
+    }
+    .card{
+        margin: 10px 2px;
+    }
+ }
+ @media (min-width: 210px) and (max-width: 419px) {
+    .top5{
+        font-size: 1.2em;
+    }
+    .card{
+        margin: 10px auto;
+    }
+ }
+ @media (min-width: 52px) and (max-width: 209px){
+    .top5{
+        font-size: 0.4em;
+        margin: 10px auto;
+    }
+    .card{
+        margin: 5px auto;
+        border-radius: 5px;
+    }
+    .card img{
+        width: 116px;
+        height: 50px;
+    }
+    .sDesc,.sName{
+        font-size: 0.4em;
+        margin-right: 0;
+    }
+    .card button{
+        padding: 0;
+        margin: 5px;
+    }
+    .card a{
+        font-size: 0.5em;
+        padding: 5px 10px;
+    }
+ }
